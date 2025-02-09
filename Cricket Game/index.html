@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="board">
+        <span class="overs">Overs<br />00.0 / 10.0</span>
+        <span class="wickets">Wickets <br />0 / 10</span>
+        <span class="runs">Runs <br />0 / 0</span>
+      </div>
+
+      <div class="container">
+        <div class="field">
+          <div class="fielders fielder-1">1</div>
+          <div class="fielders fielder-2">2</div>
+          <div class="fielders fielder-3">3</div>
+          <div class="fielders fielder-4">4</div>
+          <div class="fielders fielder-5">5</div>
+          <div class="fielders fielder-6">6</div>
+          <div class="fielders fielder-7">7</div>
+          <div class="fielders fielder-8">8</div>
+          <div class="fielders fielder-9">9</div>
+          <div class="wicket-keeper">11</div>
+          <div class="bowler">10</div>
+          <div class="ball"></div>
+
+          <div class="pitch">
+            <hr class="bowler-side-hr" />
+            <hr class="bowler-side-left-wide" />
+            <hr class="bowler-side-right-wide" />
+            <div class="bowler-side-wicket">
+              <div class="bowler-side-wicket-1 bowler-w-1"></div>
+              <div class="bowler-side-wicket-2 bowler-w-2"></div>
+              <div class="bowler-side-wicket-3 bowler-w-3"></div>
+            </div>
+
+            <hr class="batsman-side-hr" />
+            <hr class="batsman-side-left-wide" />
+            <hr class="batsman-side-right-wide" />
+            <div class="batsman-side-wicket">
+              <div class="batsman-side-wicket-1 batsman-w-1"></div>
+              <div class="batsman-side-wicket-2 batsman-w-2"></div>
+              <div class="batsman-side-wicket-3 batsman-w-3"></div>
+            </div>
+
+            <div class="batsman">
+              <span class="batsman-no">1</span>
+              <div class="bat"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="start-ball">Start Ball</button>
+        <button class="hit run">Hit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

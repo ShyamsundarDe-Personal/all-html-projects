@@ -1,0 +1,214 @@
+@font-face {
+  font-family: MyFont;
+  src: url("./Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #476c476a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.container {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 10px #3c5f3c41;
+  border: 1px solid #2c462c;
+  user-select: none;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #3c5f3c;
+  color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  gap: 5px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+}
+
+.box {
+  height: 25px;
+  width: 150px;
+  background-color: #fcfcfc;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3c5f3c;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.board {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-size: 3rem;
+  color: #2c462c;
+  background-color: #fcfcfc;
+  position: relative;
+}
+
+hr {
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+}
+
+.dino {
+  height: 60px;
+  width: 30px;
+  background-color: #7c7c7c;
+  /* background: url("./mario.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: absolute;
+  bottom: 120px;
+  border-radius: 10px 10px 0 0;
+  left: 20px;
+  transition: all 0.1s linear;
+  z-index: 2;
+}
+
+.large-cactus {
+  height: 40px;
+  width: 20px;
+  background: radial-gradient(#1c301c, #3a623a, #5baa5b);
+  position: absolute;
+  bottom: 120px;
+  border-radius: 10px 10px 0 0;
+  right: -30px;
+  transition: all 0.1s linear;
+}
+
+.small-cactus {
+  height: 30px;
+  width: 20px;
+  background: radial-gradient(#1c301c, #3a623a, #5baa5b);
+  position: absolute;
+  bottom: 120px;
+  border-radius: 10px 10px 0 0;
+  right: -30px;
+  transition: all 0.1s linear;
+}
+
+.bird {
+  height: 20px;
+  width: 20px;
+  background-color: #fd007a;
+  bottom: 180px;
+  position: absolute;
+  bottom: 170px;
+  border-radius: 3px;
+  right: -30px;
+  transition: all 0.1s linear;
+}
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3c5f3c;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.buttons {
+  width: 100%;
+  height: 100px;
+  background-color: #3c5f3c;
+  display: flex;
+  color: #fcfcfc;
+}
+
+.btn-col-1,
+.btn-col-2,
+.btn-col-3 {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sound,
+.play {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #3c5f3c;
+  color: #fcfcfc;
+  height: 100%;
+  width: 100px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border: 1px solid #2c462c;
+}
+
+button:hover {
+  background-color: #2c462c;
+}
+
+@keyframes food {
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.8;
+  }
+}
+
+@keyframes largefood {
+  50% {
+    scale: 1.6;
+  }
+  100% {
+    scale: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    height: 100px;
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("./Poppins-Regular.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: myFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.container {
+  height: 450px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 2rem;
+}
+.container h1 {
+  font-size: 4rem;
+}
+
+.select-option {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-option div {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #555;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  font-weight: bold;
+}
+.select-option div:hover {
+  background-color: #aaa;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+.restart-btn{
+    width: 150px;
+    height: 40px;
+    background-color: #666;
+    border-radius: 10px;
+    color: #fefefe;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.restart-btn:hover{
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 2.3rem;
+  }
+  .container {
+    font-size: 1.4rem;
+    gap: 20px;
+    height: 300px;
+  }
+  .select-option div {
+    width: 80px;
+    height: 40px;
+  }
+}

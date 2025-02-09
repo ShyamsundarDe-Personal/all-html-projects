@@ -1,0 +1,231 @@
+@font-face {
+  font-family: MyFont;
+  src: url("./Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #476c476a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.container {
+  height: 80%;
+  width: 32%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 10px #3c5f3c41;
+  user-select: none;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: #3c5f3c;
+  color: #fcfcfc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.board {
+  height: 90%;
+  width: 100%;
+  background-color: #fcfcfc;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.options {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  gap: 30px;
+}
+
+.options h3 {
+  font-size: 3rem;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ol li {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+li button {
+  height: 35px;
+  width: 80px;
+  background-color: #2f4a2f;
+  border: none;
+  border-radius: 50px;
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid #2f4a2f;
+  transition: all 0.3s linear;
+}
+
+li button:hover {
+  color: #2f4a2f;
+  background-color: #fcfcfc;
+  font-weight: 600;
+}
+
+.user-input {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.user-input h3 {
+  font-size: 2rem;
+}
+
+.input {
+  border-radius: 5px;
+  padding: 8px;
+  width: 80%;
+  font-weight: bolder;
+  text-align: center;
+  border: 2px solid #2f4a2f;
+}
+.input:focus {
+  outline: none;
+  border: 2px solid #2f4a2f;
+}
+
+.user-btn {
+  width: 80px;
+  background-color: #2f4a2f;
+  border: none;
+  color: #fcfcfc;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: 2px solid #2f4a2f;
+  transition: all 0.3s linear;
+  font-weight: 500;
+}
+
+.user-btn:hover {
+  color: #2f4a2f;
+  background-color: #fcfcfc;
+  font-weight: 600;
+}
+
+.input-field {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.number {
+  height: 30px;
+  width: 30px;
+  background-color: #476c476a;
+  color: #1b2b1b;
+  font-weight: 800;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+.wrong-number {
+  animation: wrong 0.1s linear 3 0.1s;
+}
+
+@keyframes wrong {
+  0% {
+    translate: 0px 0;
+  }
+  25% {
+    translate: 5px 0;
+  }
+  50% {
+    translate: 0 0;
+  }
+  75% {
+    translate: -5px 0;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+.number:hover {
+  background-color: #2f4a2f;
+  color: #fcfcfc;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 90%;
+    width: 90%;
+  }
+
+  .header {
+    width: 100%;
+    height: 10%;
+    font-size: 1.6rem;
+  }
+
+  .board {
+    height: 90%;
+    width: 100%;
+    background-color: #fcfcfc;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  ol li {
+    font-size: 1.5rem;
+    gap: 8px;
+  }
+
+  .user-input h3 {
+    font-size: 1.5rem;
+  }
+}
